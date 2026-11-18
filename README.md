@@ -4,7 +4,7 @@
 
 Исследование охватывает **104 437 клиентов** и **780 117 строк покупок** за **59 дней**. По результатам анализа подготовлены рекомендации по персональным предложениям и план проверки новой кампании.
 
-**[Аналитический отчёт](reports/analysis_report.pdf)** · **[Презентация](reports/presentation.pdf)** · **[Python-код](src/project_analysis.py)**
+**[Аналитический отчёт](analysis_report.pdf)** · **[Презентация](presentation.pdf)** · **[Python-код](project_analysis.py)**
 
 ## Бизнес-задача
 
@@ -47,10 +47,10 @@ Python, SQL, SQLite, pandas, NumPy, SciPy, scikit-learn, Matplotlib, threadpoolc
 
 | Путь | Содержание |
 |---|---|
-| [src/project_analysis.py](src/project_analysis.py) | Подготовка данных, статистические проверки, сегментация и модели |
-| [reports/analysis_report.pdf](reports/analysis_report.pdf) | Полный аналитический отчёт с выводами и ограничениями |
-| [reports/presentation.pdf](reports/presentation.pdf) | Презентация для просмотра |
-| [reports/presentation.pptx](reports/presentation.pptx) | Редактируемая презентация |
+| [project_analysis.py](project_analysis.py) | Подготовка данных, статистические проверки, сегментация и модели |
+| [analysis_report.pdf](analysis_report.pdf) | Полный аналитический отчёт с выводами и ограничениями |
+| [presentation.pdf](presentation.pdf) | Презентация для просмотра |
+| [presentation.pptx](presentation.pptx) | Редактируемая презентация |
 | [requirements.txt](requirements.txt) | Зависимости Python |
 | [.gitignore](.gitignore) | Исключение локальных данных, окружения и результатов расчётов |
 
@@ -111,13 +111,13 @@ python -m pip install -r requirements.txt
 ### 3 Выполнить анализ
 
 ```bash
-python src/project_analysis.py --data data/data.zip --personal data/personal_data.csv --out results
+python project_analysis.py --data data/data.zip --personal data/personal_data.csv --out results
 ```
 
 Каталог `results` создаётся при выполнении. В него сохраняются проверки качества, промежуточные таблицы, метрики моделей, графики, сегменты и прогнозы. Для просмотра параметров:
 
 ```bash
-python src/project_analysis.py --help
+python project_analysis.py --help
 ```
 
 ## Ограничения
